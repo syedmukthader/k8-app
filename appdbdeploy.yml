@@ -25,9 +25,9 @@ spec:
           ports:
            - name: dbport
              containerPort: 3306
-           env:
-             - name: MYSQL_ROOT_PASSWORD
-               valueFrom:
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
                  secretKeyRef:
                    name: app-secret
                    key: db-pass
@@ -38,4 +38,3 @@ spec:
           awsElasticBlockStore:
               volumeID: vol-090f7dc5be6deb7e0
               fsType: ext4
-
