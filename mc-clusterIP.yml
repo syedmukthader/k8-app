@@ -7,7 +7,7 @@ spec:
   ports:
     - port: 11211
       targetPort: mc-port
-      portocol: TCP
+      protocol: TCP
   selector:
     app: mc
     type: ClusterIP
