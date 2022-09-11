@@ -37,5 +37,5 @@ spec:
       volumes:
         - name: app-dbdata
           awsElasticBlockStore:
-              volumeID: vol-090f7dc5be6deb7e0
+              volumeID: vol-09d1d1c5d7840439c
               fsType: ext4
