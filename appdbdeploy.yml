@@ -18,7 +18,7 @@ spec:
         - name: vprodb
           image: trydomain/testprofiledb
           args:
-           - "ignore-db-dir=lost+found"
+           - "--ignore-db-dir=lost+found"
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: app-dbdata
