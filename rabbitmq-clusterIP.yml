@@ -7,7 +7,7 @@ spec:
   ports:
     - port: 15672
       targetPort: rabbitmq-port
-      portocol: TCP
+      protocol: TCP
   selector:
     app: vpromq01
     type: ClusterIP
