@@ -5,7 +5,7 @@ metadata:
   name: vpromq01
 spec:
   ports:
-    - ports: 15672
+    - port: 15672
       targetPort: rabbitmq-port
       portocol: TCP
   selector:
